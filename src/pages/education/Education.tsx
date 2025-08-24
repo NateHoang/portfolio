@@ -54,6 +54,16 @@ function Education() {
           ))}
         </p>
       </div>
+
+            <div className="education-block">
+        <div className="education-header">
+          <h2 style={{ fontSize: "175%", textDecorationLine: "underline" }}>
+            California NorthState University - College of Dental Medicine
+          </h2>
+          <span className="education-date">June. 2025 - June 2029</span>
+        </div>
+        <h3>DDS - Doctor of Dental Surgery</h3>
+      </div>
     </div>
   );
 }

@@ -53,8 +53,11 @@ function About() {
         from College of the Canyons in 2022 and graduated from UCSB in the
         spring of 2024. Areas of interest for me are software engineering, web
         development, app development, network engineering, security, and
-        fullstack development. I am currently working at Amazon as a SDE1
-        Fulltime.
+        fullstack development. I have worked in Amazon Web Service as a Software 
+        Developer Engineer I - L4 for about 7 months. As a frontend developer on Synthetics, 
+        APM, Trineo, opensearch, RUM, Pulse, and XRAY I was on road for promotion for L5, 
+        but left coding and am now persuing in becoming a dentists at CNSU. I am 
+        currently a D1 and plan to graduate in 2029.
       </div>
       <h3 className="about-header2">Skills</h3>
       <div className="about-content">

@@ -22,11 +22,16 @@ interface ShadowExperienceData {
 const Experience: React.FC = () => {
   const experiences: ExperienceData[] = [
     {
-      title: "Amazon",
+      title: "Amazon - L4",
       url: "https://www.amazon.jobs/content/en/job-categories/software-development",
       location: "Amazon, Palo Alto, United States - On-Site",
-      date: "Nov. 2024 - Present",
-      details: ["Software Development Engineer - 1"],
+      date: "Dec. 2024 - July 2025",
+      details: ["Software Development Engineer 1 - L4",
+        "Frontend Developer on Synthetics, APM, Trineo, Opensearch, RUM, Pulse, and XRAY",
+        "Worked with React, JavaScript, TypeScript, HTML, CSS, Java, AWS Services",
+        "Helped a project to revamp the user interface of the Synthetics dashboard due to customer feedback",
+        "Worked on using opensearch to help with log analysis and monitoring and free to use APIs and charting",
+        "Led a project to fix the current user experience with Pulse to allow users to test their bandwidth and API calls"],
     },
     {
       title: "Twinfold Capital",
