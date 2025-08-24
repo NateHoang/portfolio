@@ -1,0 +1,161 @@
+.projects-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  margin-left: 3%;
+  box-sizing: border-box;
+  font-size: large;
+  padding-top: 15%; /* Remove the top padding if it's not needed */
+  padding-bottom: 15%;
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next row */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add space between project blocks */
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.project-block {
+  flex: 0 1 calc(33.333% - 100px); /* Adjust the percentage and subtraction to account for the gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-block.smart-drapes-block {
+  flex: 0 1 100%; /* Take full width of the flex container */
+}
+
+.project-header {
+  font-size: 30px;
+  margin-bottom: 10px;
+  width: 100%; /* Ensure the header takes full width for consistent alignment */
+  text-align: center; /* Align the text to the center */
+}
+
+.project-image {
+  border-radius: 15px;
+  height: 250px;
+  width: auto;
+  margin-left: 10px; /* Ensures there is space on the left side for the border-radius to be visible */
+  margin-right: 20px; /* Ensures there is space on the right side */
+  margin-top: 0px; /* Ensures there is space on the top */
+  margin-bottom: 20px; /* Ensures there is space on the bottom */
+  transition: filter 0.3s ease;
+}
+
+.project-image:hover {
+  opacity: 0.3;
+}
+
+.project-title-link {
+  text-decoration: none; /* Removes the underline from links */
+  color: inherit; /* The link will inherit the color from its parent */
+}
+
+.project-title-link:hover {
+  color: rgb(9, 206, 91);
+  text-decoration: underline; /* Adds underline on hover for visual feedback */
+}
+
+@media (max-width: 1200px) {
+  /* Adjust this breakpoint as needed */
+  .project-block {
+    flex: 0 1 calc(50% - 40px); /* Two items per row at smaller widths */
+  }
+}
+
+@media (max-width: 800px) {
+  /* Adjust this breakpoint as needed */
+  .project-block {
+    flex: 0 1 100%; /* One item per row at even smaller widths */
+  }
+}
+
+.popup-content {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif; /* Use your preferred font */
+  color: #333;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.popup-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.popup-title {
+  font-size: 24px;
+  color: #333; /* Title text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold;
+}
+
+.popup-title:hover {
+  color: #09ce5b;
+}
+
+.popup-close-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  line-height: 1;
+  color: #333;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.popup-close-btn:hover {
+  color: #09ce5b;
+}
+
+.popup-image {
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.popup-content p {
+  font-size: 16px;
+  margin: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .project-block {
+    flex: 0 1 100%;
+  }
+  .project-image {
+    margin-left: 0;
+    width: auto;
+    height: 200px;
+    margin-right: 0;
+  }
+
+  .project-content {
+    padding: 0;
+  }
+}

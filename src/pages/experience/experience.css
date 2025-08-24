@@ -1,0 +1,71 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align to the start of the container */
+  overflow-x: hidden;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  box-sizing: border-box;
+}
+
+.experience-block {
+  width: calc(100% - 6%);
+  margin-left: 3%; /* Offset by the navbar width */
+  word-wrap: break-word;
+  margin-bottom: 20px; /* Space between experience blocks */
+}
+
+.experience-block li {
+  max-width: 70%;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Space below the header */
+}
+
+.experience-header h2 {
+  margin: 0; /* Remove margin to align properly with the date */
+}
+
+.experience-date {
+  padding-right: 10%;
+  font-size: 150%;
+}
+
+/* Styles for the paragraphs if needed */
+.experience-block li {
+  margin: 1px 0;
+  font-size: 100%;
+}
+
+.experience-block h3 {
+  font-size: 150%;
+  margin: 0;
+}
+
+.experience-header a {
+  font-weight: bold;
+  color: inherit; /* This makes the link use the text color of its parent element */
+  text-decoration: none; /* This removes the underline from the link */
+}
+
+.experience-header a:hover {
+  color: rgb(9, 206, 91);
+  text-decoration: underline; /* This will underline the text when hovered over */
+}
+
+@media screen and (max-width: 768px) {
+  .experience-header h2,
+  .experience-date {
+    font-size: calc(
+      1em + 2vw
+    ); /* Increase font size on smaller screens for better readability */
+  }
+
+  .experience-block li {
+    font-size: calc(0.8em + 1vw); /* Increase font size on smaller screens */
+  }
+}

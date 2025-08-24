@@ -1,0 +1,67 @@
+html,
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.navbar-container {
+  position: fixed; /* Fix the navbar relative to the viewport */
+  top: 0; /* Align the top edge of the navbar with the top of the viewport */
+  left: 0; /* Align the left edge of the navbar with the left of the viewport */
+  width: 250px; /* Adjust based on your navbar width */
+  height: 100%; /* Make the navbar the full height of the viewport */
+}
+
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 250px; /* Offset by the navbar width */
+  scroll-padding-top: 250px; /* Height of the fixed navbar */
+  width: calc(100vw - 250px); /* Full width minus the navbar */
+  overflow-y: auto; /* Scrollable content */
+  overflow-x: hidden;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 100;
+  }
+  .content-container {
+    margin-left: 0;
+    width: 100%;
+    scroll-padding-top: 0;
+  }
+}
+
+/* Rest of your CSS */

@@ -1,0 +1,51 @@
+/* mobileNavBar.css */
+
+.header {
+  background: #4caf50;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 0; /* Remove bottom margin if any */
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  width: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+.navbar.open {
+  display: flex; /* Show when open */
+  padding-left: 50px; /* Remove default padding */
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.navbar-item {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Full width */
+  padding: 14px 0; /* Padding top and bottom only */
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-item a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+  display: block;
+  width: 100%; /* Full width */
+  transition: background-color 0.3s, color 0.3s;
+}

@@ -1,0 +1,72 @@
+.social-icons-container {
+  display: flex; /* Align children horizontally */
+  justify-content: left; /* Center icons in the container */
+  align-items: center; /* Center icons vertically */
+  padding-top: 2%;
+}
+
+.social-icons-container .social-icon {
+  margin-right: 2%; /* Add some space between icons */
+}
+
+.social-icons-container .social-icon:last-child {
+  margin-right: 0; /* No margin for the last icon */
+}
+
+.social-icon-custom {
+  display: inline-block;
+  width: 50px; /* Adjust this percentage as needed */
+  height: 50px; /* Adjust this percentage as needed */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 2%; /* Adjusted to a percentage */
+  background-size: cover;
+  background-position: center;
+}
+
+.introduction-container {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+  padding: 5%;
+  box-sizing: border-box; /* Include padding in the width calculation */
+  font-size: large;
+  padding-top: 8%;
+  padding-bottom: 10%;
+}
+
+.introduction-block {
+  padding-top: 17%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: auto; /* Maintain the original image aspect ratio */
+  height: 35vh; /* Adjust height as needed */
+  border-radius: 15px; /* Rounded corners; adjust as needed */
+  object-fit: cover; /* This will cover the area without stretching */
+  /* Adjust the following margins and padding as necessary */
+  margin-left: 100pt; /* Ensures there is space on the left side for the border-radius to be visible */
+  margin-right: 25pt; /* Ensures there is space on the right side */
+  margin-top: 25pt; /* Ensures there is space on the top */
+  margin-bottom: 25pt; /* Ensures there is space on the bottom */
+}
+
+/* Add this to your CSS file */
+@media screen and (max-width: 590px) {
+  .profile-picture {
+    display: none;
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}

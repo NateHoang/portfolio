@@ -1,0 +1,53 @@
+/* Navbar.css */
+
+/* Style the navigation bar */
+.nav {
+  background-color: #ffffff; /* Dark background color */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100%;
+}
+
+.navbar-picture {
+  border-radius: 15%; /* Makes the image circular */
+  width: auto; /* Ensures the width is the same as the height */
+  height: 200px; /* Ensures the height is the same as the width */
+}
+
+.nav-item {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+/* Style the links inside the navigation items */
+.nav-item a {
+  display: inline-block;
+  border-radius: 100%;
+  padding: 15%;
+  text-decoration: none;
+  color: rgb(0, 0, 0); /* White text color */
+  transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Animate the transform and color change */
+}
+
+/* Change background and text color when hovering over the links */
+.nav-item a:hover {
+  background-color: #09ce5b; /* Light gray background on hover */
+  color: white; /* Black text color on hover */
+}
+
+.nav-item .nav-link.active {
+  background-color: #09ce5b; /* Change the color to what you prefer for the active state */
+  color: white; /* Change text color as needed */
+}
