@@ -11,9 +11,8 @@ function Interest() {
         too.
       </p>
       <p>
-        Whenever I have free time and am not coding, I like to play games, try
-        new recipes, go to the gym, hike, play my clarinet, rock climb,
-        futures/option trading, and catch up on shows and movies.
+        Whenever I have free time and am not coding, or drilling teeth, I like to play games, try
+        new recipes, go to the gym, hike, play my clarinet, rock climb, snowboard, and catch up on shows and movies.
       </p>
     </div>
   );

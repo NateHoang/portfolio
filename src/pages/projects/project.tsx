@@ -7,6 +7,7 @@ import summitPic from "../../assets/vr.png"; // Assuming you have this asset
 import smartDrapesPic from "../../assets/smartDrape.png"; // Assuming you have this asset
 import moonDustPic from "../../assets/moonDust.jpg";
 import marketMatePic from "../../assets/marketMatePic.jpg";
+import CNUWebsitePic from "../../assets/CNU2029.jpg";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 
@@ -71,6 +72,13 @@ const projectsInfo: ProjectInfo = {
     image: marketMatePic,
     language: "Figma",
   },
+  CNUWebsite: {
+    title: "CNU Dental Website",
+    description:
+      "Created a website for California Northstate University - College of Dental Medicine. This website is used for the class of 2029 to connect with each other, make wonderful memories, stay updated with class and school updates/activities, and trouble shoot problems within the class.",
+    image: CNUWebsitePic,
+    language: "HTML, CSS, JavaScript",
+  }
 };
 
 const githubUrls: { [key: string]: string } = {
@@ -83,6 +91,7 @@ const githubUrls: { [key: string]: string } = {
   MoonDust: "https://github.com/calee14/moon-dust",
   MarketMate:
     "https://www.figma.com/design/yQweRnjKTxwudGMMt1KhT1/JANKR?node-id=0-1&node-type=canvas&t=tNBzicwS9snJAQmR-0",
+  CNUWebsite: "https://www.cnu2029.com/"
 };
 
 function Projects() {

@@ -62,7 +62,9 @@ function Education() {
           </h2>
           <span className="education-date">June. 2025 - June 2029</span>
         </div>
-        <h3>DDS - Doctor of Dental Surgery</h3>
+        <h3>DMD - Doctor of Dental Medicine</h3>
+        <p>Tech-Chair for Class of 2029</p>
+        <p>Research: GLP Research with Shyma Bilasy, Raymond Tong, Anh-Minh Phung</p>
       </div>
     </div>
   );

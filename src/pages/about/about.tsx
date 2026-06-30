@@ -57,7 +57,7 @@ function About() {
         Developer Engineer I - L4 for about 7 months. As a frontend developer on Synthetics, 
         APM, Trineo, opensearch, RUM, Pulse, and XRAY I was on road for promotion for L5, 
         but left coding and am now persuing in becoming a dentists at CNSU. I am 
-        currently a D1 and plan to graduate in 2029.
+        currently a D2 and plan to graduate in 2029.
       </div>
       <h3 className="about-header2">Skills</h3>
       <div className="about-content">
