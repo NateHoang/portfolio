@@ -14,7 +14,7 @@ function Intro() {
   const email = "nahoang168@gmail.com";
   const phone = "(1)323-719-9167";
   const resumeUrl =
-    "https://drive.google.com/file/d/1t8ZRPZbQWus7sRnZAwe9kEW_gaVVw3Fg/view?usp=sharing";
+    "https://drive.google.com/file/d/1ahu5x1DBN60g3OsI_UT-3CEA7bTyUHEs/view?usp=sharing";
 
   // Array of images for cycling
   const images = [
